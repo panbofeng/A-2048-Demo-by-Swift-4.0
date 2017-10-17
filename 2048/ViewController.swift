@@ -10,15 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var labelPosition: UILabel!
+    @IBOutlet weak var topScoreLabel: UILabel!
     var diamondsNumber: Int = 4
     var diamondsPadding: CGFloat = 5
     var diamondsSize: CGFloat = 0
     var gameModel = GameModel()
     var gamePanel = GamePanel()
-
+    let topScoreStored = UserDefaults()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         addGamePanel(firstPositionX: gameModel.theFirstDiamondX, firstPositionY: gameModel.theFirstDiamondY, secondPositionX: gameModel.theSecondDiamondX, secondPositionY: gameModel.theSecondDiamondY)
+        topScoreLabel.text = "\(topScoreStored.integer(forKey: "topScore"))"
     }
     
     @IBAction func userSlideUp(_ sender: UISwipeGestureRecognizer) {
@@ -59,6 +62,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func restartButton() {
+        if Int(labelPosition.text!)! > topScoreStored.integer(forKey: "topScore"){
+            updateTopScore(aScore: Int(labelPosition.text!)!)
+        }
+        topScoreLabel.text = "\(topScoreStored.integer(forKey: "topScore"))"
         restartGame()
     }
     
@@ -101,6 +108,10 @@ class ViewController: UIViewController {
             gameOverNotice.addAction(OKAction)
             self.present(gameOverNotice, animated: true)
         }
+        if Int(labelPosition.text!)! > topScoreStored.integer(forKey: "topScore"){
+            updateTopScore(aScore: Int(labelPosition.text!)!)
+            topScoreLabel.text = "\(topScoreStored.integer(forKey: "topScore"))"
+        }
     }
     
     func restartGame(){
@@ -112,5 +123,9 @@ class ViewController: UIViewController {
         gameModel.diamondsLineFour = [0,0,0,0]
         labelPosition.text = "\(0)"
         addGamePanel(firstPositionX: gameModel.theFirstDiamondX, firstPositionY: gameModel.theFirstDiamondY, secondPositionX: gameModel.theSecondDiamondX, secondPositionY: gameModel.theSecondDiamondY)
+    }
+    
+    func updateTopScore(aScore:Int){
+        topScoreStored.set(aScore, forKey: "topScore")
     }
 }

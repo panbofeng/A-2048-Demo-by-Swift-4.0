@@ -94,6 +94,7 @@
                     </view>
                     <connections>
                         <outlet property="labelPosition" destination="n2a-aI-SlS" id="xcZ-y8-EVt"/>
+                        <outlet property="topScoreLabel" destination="1Sx-e6-i47" id="cvV-Nb-NIW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
