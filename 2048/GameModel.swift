@@ -446,7 +446,7 @@ class GameModel {
         for i in 0..<3{
             if(diamondsRowTwo[i] == diamondsRowTwo[i+1]) {flagEqual=1} }
         for i in 0..<3{
-            if(diamondsLRowThree[i] == diamondsLineThree[i+1]) {flagEqual=1} }
+            if(diamondsRowThree[i] == diamondsLineThree[i+1]) {flagEqual=1} }
         for i in 0..<3{
             if(diamondsRowFour[i] == diamondsRowFour[i+1]) {flagEqual=1} }
         if flagEqual == 1 || flagZero == 1 {return false}
