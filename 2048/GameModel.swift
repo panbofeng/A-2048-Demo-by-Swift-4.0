@@ -81,9 +81,9 @@ class GameModel {
         }
         var isOrNotSuccess:Bool
         repeat {
-           self.createRandomX = Int(arc4random() % 4)
-           self.createRandomY = Int(arc4random() % 4)
-           isOrNotSuccess = insertToArray(positionX: self.createRandomX, positionY: self.createRandomY, value: 2)
+            self.createRandomX = Int(arc4random() % 4)
+            self.createRandomY = Int(arc4random() % 4)
+            isOrNotSuccess = insertToArray(positionX: self.createRandomX, positionY: self.createRandomY, value: 2)
         } while isOrNotSuccess == false
     }
     

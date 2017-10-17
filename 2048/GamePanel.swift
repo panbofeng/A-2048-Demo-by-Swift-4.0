@@ -40,7 +40,7 @@ class GamePanel: UIView{
         }
     }
     
-     func insertDiamonds(positionX: CGFloat, positionY: CGFloat, value: Int){
+    func insertDiamonds(positionX: CGFloat, positionY: CGFloat, value: Int){
         let insertX = diamondsPadding + positionX * (diamondsPadding + diamondsSize)
         let insertY = diamondsPadding + positionY * (diamondsPadding + diamondsSize)
         let diamondsView = DiamondsView(positionX: insertX, positionY: insertY, diamondsSize: diamondsSize, value: value)
