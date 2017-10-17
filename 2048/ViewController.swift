@@ -58,6 +58,10 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func restartButton() {
+        restartGame()
+    }
+    
     func rebuildGamePanel()
     {
         gamePanel.removeAllSubView()
@@ -89,5 +93,24 @@ class ViewController: UIViewController {
         }
         labelPosition.text = "\(Int(labelPosition.text!)!+10)"
         gamePanel.insertDiamonds(positionX: CGFloat(gameModel.createRandomX), positionY: CGFloat(gameModel.createRandomY), value: 2)
+        if gameModel.isGameOver() == true{
+            let gameOverNotice = UIAlertController(title: "GameOver", message: "请重新开始.", preferredStyle: .alert)
+            let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+                self.restartGame()
+            }
+            gameOverNotice.addAction(OKAction)
+            self.present(gameOverNotice, animated: true)
+        }
+    }
+    
+    func restartGame(){
+        gamePanel.removeAllSubView()
+        gamePanel.removeFromSuperview()
+        gameModel.diamondsLineOne = [0,0,0,0]
+        gameModel.diamondsLineTwo = [0,0,0,0]
+        gameModel.diamondsLineThree = [0,0,0,0]
+        gameModel.diamondsLineFour = [0,0,0,0]
+        labelPosition.text = "\(0)"
+        addGamePanel(firstPositionX: gameModel.theFirstDiamondX, firstPositionY: gameModel.theFirstDiamondY, secondPositionX: gameModel.theSecondDiamondX, secondPositionY: gameModel.theSecondDiamondY)
     }
 }

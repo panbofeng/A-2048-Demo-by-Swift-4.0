@@ -418,24 +418,38 @@ class GameModel {
     }
     
     func isGameOver() -> Bool{
-        var flag = true
+        var flagEqual = 0
+        var flagZero = 0
         for i in 0..<3{
-            if(diamondsLineOne[i] == diamondsLineOne[i+1]) {flag=false} }
+            if(diamondsLineOne[i] == diamondsLineOne[i+1]) {flagEqual=1}
+            if(diamondsLineOne[i] == 0){flagZero = 1}
+            if(diamondsLineOne[i+1] == 0){flagZero = 1}
+        }
         for i in 0..<3{
-            if(diamondsLineTwo[i] == diamondsLineTwo[i+1]) {flag=false} }
+            if(diamondsLineTwo[i] == diamondsLineTwo[i+1]) {flagEqual=1}
+            if(diamondsLineTwo[i] == 0){flagZero = 1}
+            if(diamondsLineTwo[i+1] == 0){flagZero = 1}
+        }
         for i in 0..<3{
-            if(diamondsLineThree[i] == diamondsLineThree[i+1]) {flag=false} }
+            if(diamondsLineThree[i] == diamondsLineThree[i+1]) {flagEqual=1}
+            if(diamondsLineThree[i] == 0){flagZero = 1}
+            if(diamondsLineThree[i+1] == 0){flagZero = 1}
+        }
         for i in 0..<3{
-            if(diamondsLineFour[i] == diamondsLineFour[i+1]) {flag=false} }
+            if(diamondsLineFour[i] == diamondsLineFour[i+1]) {flagEqual=1}
+            if(diamondsLineFour[i] == 0){flagZero = 1}
+            if(diamondsLineFour[i+1] == 0){flagZero = 1}
+        }
         resertArray()
         for i in 0..<3{
-            if(diamondsLineOne[i] == diamondsLineOne[i+1]) {flag=false} }
+            if(diamondsRowOne[i] == diamondsRowOne[i+1]) {flagEqual=1} }
         for i in 0..<3{
-            if(diamondsLineTwo[i] == diamondsLineTwo[i+1]) {flag=false} }
+            if(diamondsRowTwo[i] == diamondsRowTwo[i+1]) {flagEqual=1} }
         for i in 0..<3{
-            if(diamondsLineThree[i] == diamondsLineThree[i+1]) {flag=false} }
+            if(diamondsLRowThree[i] == diamondsLineThree[i+1]) {flagEqual=1} }
         for i in 0..<3{
-            if(diamondsLineFour[i] == diamondsLineFour[i+1]) {flag=false} }
-        return flag
+            if(diamondsRowFour[i] == diamondsRowFour[i+1]) {flagEqual=1} }
+        if flagEqual == 1 || flagZero == 1 {return false}
+        else {return true}
     }
 }
