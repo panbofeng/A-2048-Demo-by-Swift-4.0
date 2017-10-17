@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3E3144C71F9399C100A6087B /* DiamondsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3144C61F9399C100A6087B /* DiamondsView.swift */; };
 		3E4F7A8E1F94EF2F00E03EF2 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4F7A8D1F94EF2F00E03EF2 /* GameModel.swift */; };
+		3E7754C71F95F67C0080BB52 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3E7754C61F95F67C0080BB52 /* README.md */; };
 		3E780D9C1F92732700B97789 /* GamePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E780D9B1F92732700B97789 /* GamePanel.swift */; };
 		3EB714AF1F920F1300E5539A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB714AE1F920F1300E5539A /* AppDelegate.swift */; };
 		3EB714B11F920F1300E5539A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB714B01F920F1300E5539A /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		3E3144C61F9399C100A6087B /* DiamondsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondsView.swift; sourceTree = "<group>"; };
 		3E4F7A8D1F94EF2F00E03EF2 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		3E7754C61F95F67C0080BB52 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3E780D9B1F92732700B97789 /* GamePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePanel.swift; sourceTree = "<group>"; };
 		3EB714AB1F920F1300E5539A /* 2048.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 2048.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB714AE1F920F1300E5539A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 		3EB714A21F920F1300E5539A = {
 			isa = PBXGroup;
 			children = (
+				3E7754C61F95F67C0080BB52 /* README.md */,
 				3EB714AD1F920F1300E5539A /* 2048 */,
 				3EB714C21F920F1300E5539A /* 2048Tests */,
 				3EB714CD1F920F1300E5539A /* 2048UITests */,
@@ -243,6 +246,7 @@
 			files = (
 				3EB714B91F920F1300E5539A /* LaunchScreen.storyboard in Resources */,
 				3EB714B61F920F1300E5539A /* Assets.xcassets in Resources */,
+				3E7754C71F95F67C0080BB52 /* README.md in Resources */,
 				3EB714B41F920F1300E5539A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
