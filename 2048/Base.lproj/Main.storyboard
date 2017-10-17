@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_048" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前分数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glL-c6-m4c">
+                                <rect key="frame" x="29" y="39" width="102" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2a-aI-SlS">
+                                <rect key="frame" x="30" y="79" width="100" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Sx-e6-i47">
+                                <rect key="frame" x="249" y="79" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IvY-tc-gcj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最高分" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cm-2a-Yca">
+                                <rect key="frame" x="261" y="39" width="76" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="verison 1.0 developer: Pan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZl-OE-LKH">
+                                <rect key="frame" x="159" y="626" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35431957244873047" green="0.42374750971794128" blue="0.5341460108757019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uZl-OE-LKH" secondAttribute="trailing" constant="16" id="2ev-hv-hc9"/>
+                            <constraint firstItem="n2a-aI-SlS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="4g0-bS-5kg"/>
+                            <constraint firstItem="uZl-OE-LKH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="G5A-pE-kiJ"/>
+                            <constraint firstItem="1Sx-e6-i47" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="79" id="I0y-PI-GFG"/>
+                            <constraint firstItem="9Cm-2a-Yca" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="261" id="J9s-Pz-T5C"/>
+                            <constraint firstItem="n2a-aI-SlS" firstAttribute="centerX" secondItem="glL-c6-m4c" secondAttribute="centerX" id="QKX-Z9-a2I"/>
+                            <constraint firstItem="1Sx-e6-i47" firstAttribute="top" secondItem="9Cm-2a-Yca" secondAttribute="bottom" constant="10" id="SwL-BT-2Ef"/>
+                            <constraint firstItem="1Sx-e6-i47" firstAttribute="firstBaseline" secondItem="n2a-aI-SlS" secondAttribute="baseline" id="WYf-oj-bzv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uZl-OE-LKH" secondAttribute="bottom" constant="20" id="Xia-Ek-b0l"/>
+                            <constraint firstItem="glL-c6-m4c" firstAttribute="baseline" secondItem="9Cm-2a-Yca" secondAttribute="baseline" id="eT3-pR-X4Z"/>
+                            <constraint firstItem="glL-c6-m4c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="jfb-3E-LQd"/>
+                            <constraint firstItem="1Sx-e6-i47" firstAttribute="centerX" secondItem="9Cm-2a-Yca" secondAttribute="centerX" id="oTn-de-Rla"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1Sx-e6-i47" secondAttribute="trailing" constant="26" id="pq9-2q-FPh"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="glL-c6-m4c" secondAttribute="trailing" constant="20" symbolic="YES" id="pvB-OY-Kvf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Cm-2a-Yca" secondAttribute="trailing" id="s0N-Sm-Vee"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="A7x-Ji-qEz" appends="YES" id="iAr-T0-Pe1"/>
+                            <outletCollection property="gestureRecognizers" destination="dH5-Ri-oGc" appends="YES" id="Qe1-2e-7Op"/>
+                            <outletCollection property="gestureRecognizers" destination="coc-6U-HaG" appends="YES" id="aNe-Qv-y86"/>
+                            <outletCollection property="gestureRecognizers" destination="6RO-5x-37i" appends="YES" id="IUi-f5-9wE"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="labelPosition" destination="n2a-aI-SlS" id="xcZ-y8-EVt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="up" id="A7x-Ji-qEz">
+                    <connections>
+                        <action selector="userSlideUp:" destination="BYZ-38-t0r" id="dn0-5r-dmK"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="dH5-Ri-oGc">
+                    <connections>
+                        <action selector="userSlideDown:" destination="BYZ-38-t0r" id="HoF-Pd-lPd"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="coc-6U-HaG">
+                    <connections>
+                        <action selector="userSlideLeft:" destination="BYZ-38-t0r" id="tFP-sE-eo0"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="6RO-5x-37i">
+                    <connections>
+                        <action selector="userSlideRight:" destination="BYZ-38-t0r" id="XxO-8d-plU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
