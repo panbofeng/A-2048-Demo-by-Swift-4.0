@@ -27,3 +27,5 @@ class DiamondsView: UIView{
         fatalError("init(coder:) has not been implemented")
     }
 }
+
+
