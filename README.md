@@ -13,3 +13,7 @@ Basic 2048 implementation.
 ## Known bugs and comming next:
 1. no game level selection buttons.
 2. no animation(will not be added in next few verisons).
+
+!!!For our project!!!
+
+
